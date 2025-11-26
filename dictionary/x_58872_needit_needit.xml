@@ -1,27 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
-        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="6fa92243c391b610ec76502ed4013145" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
-                <element label="Human Resources" sequence="0" value="hr"/>
-                <element label="Facilities" sequence="1" value="facilities"/>
-                <element label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="12/1/2025" sequence="0" value="12/1/2025"/>
+                <element inactive_on_update="false" label="12/2/2025" sequence="0" value="12/2/2025"/>
+                <element inactive_on_update="false" label="12/8/2025" sequence="0" value="12/8/2025"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="12/9/2025" sequence="0" value="12/9/2025"/>
+                <element inactive_on_update="false" label="Access" sequence="0" value="Access"/>
+                <element inactive_on_update="false" label="12/5/2025" sequence="0" value="12/5/2025"/>
+                <element inactive_on_update="false" label="Software" sequence="0" value="Software"/>
+                <element inactive_on_update="false" label="12/4/2025" sequence="0" value="12/4/2025"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Hardware" sequence="0" value="Hardware"/>
+                <element inactive_on_update="false" label="12/3/2025" sequence="0" value="12/3/2025"/>
+                <element inactive_on_update="false" label="12/6/2025" sequence="0" value="12/6/2025"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="12/10/2025" sequence="0" value="12/10/2025"/>
+                <element inactive_on_update="false" label="12/7/2025" sequence="0" value="12/7/2025"/>
+                <element inactive="true" inactive_on_update="true" label="Developer Enablement" sequence="0" value="dev_enable"/>
             </choice>
         </element>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="hr1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
-                <element label="Human Resources 1" sequence="0" value="hr1"/>
-                <element label="Human Resources 2" sequence="1" value="hr2"/>
-                <element label="Facilities 1" sequence="2" value="facilities1"/>
-                <element label="Facilities 2" sequence="3" value="facilities2"/>
-                <element label="Legal 1" sequence="4" value="legal1"/>
-                <element label="Legal 2" sequence="5" value="legal2"/>
-                <element label="Other" sequence="6" value="other"/>
+                <element inactive_on_update="false" label="Email distribution list" sequence="0" value="Email distribution list"/>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="Laptop"/>
+                <element inactive_on_update="false" label="VPN access" sequence="0" value="VPN access"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="Other" sequence="6" value="other"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Monitor" sequence="0" value="Monitor"/>
+                <element inactive_on_update="false" label="Database read access" sequence="0" value="Database read access"/>
+                <element inactive_on_update="false" label="MS Office upgrade" sequence="0" value="MS Office upgrade"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="Keyboard" sequence="0" value="Keyboard"/>
+                <element inactive_on_update="false" label="Shared drive access" sequence="0" value="Shared drive access"/>
+                <element inactive="true" inactive_on_update="true" label="Your Department Choice 1" sequence="0" value="your_choice1"/>
+                <element inactive_on_update="false" label="Adobe license" sequence="0" value="Adobe license"/>
+                <element inactive_on_update="false" label="Building access" sequence="0" value="Building access"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities2"/>
+                <element inactive="true" inactive_on_update="true" label="Your Department Choice 2" sequence="1" value="your_choice2"/>
             </choice>
         </element>
-        <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
     </element>
 </database>
